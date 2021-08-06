@@ -2,6 +2,7 @@ const express = require("express")
 const app = express()
 const amqp = require("amqplib")
 
+
 const twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 const service = twilio.notify.services(process.env.TWILIO_NOTIFY_SERVICE_SID);
 
